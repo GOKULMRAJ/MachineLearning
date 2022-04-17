@@ -89,11 +89,11 @@ def NNCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X
 
 
 input_layer_size = 400
-hidden_layer_size = 2
+hidden_layer_size = 25
 num_labels = 10
-# nn_params = np.append(Theta1.flatten(), Theta2.flatten())
-# J, reg_J = NNCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, 1)[0:4:3]
-# print("Cost at parameters (non-regularized):", J, "\nCost at parameters (Regularized):", reg_J)
+nn_params = np.append(Theta1.flatten(), Theta2.flatten())
+J, reg_J = NNCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, 1)[0:4:3]
+print("Cost at parameters (non-regularized):", J, "\nCost at parameters (Regularized):", reg_J)
 
 
 def randInitializeWeights(Lin, Lout):
