@@ -189,4 +189,3 @@ y_test = spam_mat_test["ytest"]
 
 spam_svc.predict(X_test)
 print("Test Accuracy:", (spam_svc.score(X_test, y_test.ravel())) * 100, "%")
-

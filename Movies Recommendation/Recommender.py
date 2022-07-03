@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
-mat3 = loadmat("Movies Recommendation/ex8_movies.mat")
-mat4 = loadmat("Movies Recommendation/ex8_movieParams.mat")
+mat3 = loadmat("ex8_movies.mat")
+mat4 = loadmat("ex8_movieParams.mat")
 Y = mat3["Y"]
 R = mat3["R"]
 X = mat4["X"]
@@ -66,7 +66,7 @@ my_ratings[82] = 4
 my_ratings[225] = 5
 my_ratings[354] = 5
 
-movieList = open("Movies Recommendation/movie_ids.txt", "r").read().split("\n")[:-1]
+movieList = open("movie_ids.txt", "r").read().split("\n")[:-1]
 
 print("New user ratings:\n")
 for i in range(len(my_ratings)):

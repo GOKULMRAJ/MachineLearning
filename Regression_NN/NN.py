@@ -116,7 +116,6 @@ def gradientDescentNN(X, y, initial_nn_params, alpha, num_iters, Lambda, input_l
     Theta2 = initial_nn_params[((input_layer_size + 1) * hidden_layer_size):].reshape(num_labels,
                                                                                       hidden_layer_size + 1)
 
-    m = len(y)
     J_history = []
 
     for i in range(num_iters):

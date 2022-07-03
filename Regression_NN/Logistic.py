@@ -50,7 +50,6 @@ print("Gradient at initial theta (zeros):", grad)
 
 
 def gradientDescent(X, y, theta, alpha, num_iters):
-    m = len(y)
     J_history = []
 
     for i in range(num_iters):
@@ -90,5 +89,3 @@ def Predict(theta, X):
 
 p = Predict(theta, X)
 print("Train Accuracy:", sum(p == y)[0], "%")
-
-

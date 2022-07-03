@@ -57,7 +57,7 @@ class MS:
                 centroids[i] = unique[i]
 
             stable = True
-            for i in centroids:
+            for _ in centroids:
                 if not np.array_equal(centroids, prev):
                     stable = False
                 if not stable:

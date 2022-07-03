@@ -51,7 +51,6 @@ print("Gradient at initial theta (zeros):", grad)
 
 
 def gradientDescent(X, y, theta, alpha, num_iters, Lambda):
-    m = len(y)
     J_history = []
 
     for i in range(num_iters):

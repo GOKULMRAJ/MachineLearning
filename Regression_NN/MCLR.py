@@ -29,7 +29,6 @@ def costFunction(theta, X, y, Lambda):
 
 
 def gradientDescent(X, y, theta, alpha, num_iters, Lambda):
-    m = len(y)
     J_history = []
 
     for i in range(num_iters):
@@ -74,5 +73,3 @@ def predictMC(all_theta, X):
 
 p = predictMC(all_theta, X)
 print("Training Set Accuracy:", sum(p[:, np.newaxis] == y)[0] / len(y) * 100, "%")
-
-
