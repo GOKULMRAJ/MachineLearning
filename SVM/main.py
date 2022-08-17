@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
-mat = loadmat("ex6data1.mat")
+mat = loadmat("data1.mat")
 X = mat["X"]
 y = mat["y"]
 
@@ -40,7 +40,7 @@ plt.contour(X_3, X_4, classifier2.predict(np.array([X_3.ravel(), X_4.ravel()]).T
 plt.xlim(0, 4.5)
 plt.ylim(1.5, 5)
 
-mat2 = loadmat("ex6data2.mat")
+mat2 = loadmat("data2.mat")
 X2 = mat2["X"]
 y2 = mat2["y"]
 
@@ -65,7 +65,7 @@ plt.contour(X_5, X_6, classifier3.predict(np.array([X_5.ravel(), X_6.ravel()]).T
 plt.xlim(0, 1)
 plt.ylim(0.4, 1)
 
-mat3 = loadmat("ex6data3.mat")
+mat3 = loadmat("data3.mat")
 X3 = mat3["X"]
 y3 = mat3["y"]
 Xval = mat3["Xval"]

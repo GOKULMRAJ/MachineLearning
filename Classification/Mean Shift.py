@@ -76,6 +76,6 @@ classifier = MS()
 classifier.fit(X)
 
 for c in classifier.centroids:
-    plt.scatter(classifier.centroids[c][0], classifier.centroids[c][1], color='k', marker='*', s=150)
+    plt.scatter(classifier.centroids[c][0], classifier.centroids[c][1], color='k', marker='.', s=150)
 
 plt.show()

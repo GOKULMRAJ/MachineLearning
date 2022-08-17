@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
-mat = loadmat("ex8data1.mat")
+mat = loadmat("Computer_data.mat")
 X = mat["X"]
 Xval = mat["Xval"]
 yval = mat["yval"]

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat
 
-mat = loadmat("ex3data1.mat")
+mat = loadmat("Digits.mat")
 
 X = mat["X"]
 y = mat["y"]
@@ -10,7 +10,7 @@ y = mat["y"]
 fig, axis = plt.subplots(10, 10, figsize=(8, 8))
 for i in range(10):
     for j in range(10):
-        axis[i, j].imshow(X[np.random.randint(0, 5001), :].reshape(20, 20, order="F"),
+        axis[i, j].imshow(X[np.random.randint(0, 5000), :].reshape(20, 20, order="F"),
                           cmap="hot")
         axis[i, j].axis("off")
 plt.show()

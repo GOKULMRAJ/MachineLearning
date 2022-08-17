@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat
 
-mat = loadmat("ex3data1.mat")
+mat = loadmat("Digits.mat")
 
 X = mat["X"]
 y = mat["y"]
@@ -20,7 +20,7 @@ def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
 
-mat2 = loadmat("ex3weights.mat")
+mat2 = loadmat("Pretrained_weights.mat")
 Theta1 = mat2["Theta1"]
 Theta2 = mat2["Theta2"]
 

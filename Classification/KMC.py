@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat
 
-mat = loadmat("ex7data2.mat")
+mat = loadmat("example.mat")
 X = mat["X"]
 
 

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
-mat3 = loadmat("ex7data1.mat")
+mat3 = loadmat("example.mat")
 X3 = mat3["X"]
 
 plt.scatter(X3[:, 0], X3[:, 1], marker="o", facecolors="none", edgecolors="b")
@@ -78,7 +78,7 @@ plt.title("The Normalized and Projected Data after PCA")
 plt.legend()
 plt.show()
 
-mat4 = loadmat("ex7faces.mat")
+mat4 = loadmat("Faces.mat")
 X4 = mat4["X"]
 
 fig, ax = plt.subplots(nrows=10, ncols=10, figsize=(8, 8))

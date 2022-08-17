@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv("ex2data1.txt", header=None)
+df = pd.read_csv("Exam_scores.txt", header=None)
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
